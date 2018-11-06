@@ -20,7 +20,20 @@
 
 <body>
 
+  <form>
+    <label>Titre</label>
+      <input id="title" type="text" placeholder="titre" required />
+    <label>Phrase accroche</label>
+      <input id="accro" type="text" placeholder="phrase accroche" required />
+    <label>Description</label>
+      <input id="summ" type="text" required />
+      <input type="button" value="SEND" onClick="window.location.reload()"> 
+    </form>
 
+
+  <h1 id="dtitle"></h1>
+  <p id="daccro"></p>
+  <p id="dsumm"></p>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
