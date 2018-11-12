@@ -97,6 +97,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.card{
+    margin : 10px;
+    width : 100%;
+}
+
 .title,
 .accro,
 .desc{
