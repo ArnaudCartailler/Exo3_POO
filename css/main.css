@@ -97,15 +97,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-table{
-    width : 50%;
-    border : 1px solid black;
+.title,
+.accro,
+.desc{
+    border: 1px solid black;
 }
 
-th{
-    border : 1px solid black;
+.borderaccro,
+.borderdesc {
+    border-top: none;
 }
-
 
 
 

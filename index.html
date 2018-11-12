@@ -20,20 +20,27 @@
 
 <body>
 
-  <form>
-    <label>Titre</label>
-      <input id="title" type="text" placeholder="titre" required />
-    <label>Phrase accroche</label>
-      <input id="accro" type="text" placeholder="phrase accroche" required />
-    <label>Description</label>
-      <input id="summ" type="text" required />
-      <input type="button" value="SEND" onClick="window.location.reload()"> 
-    </form>
+  
+    <div class="container-fluid">
+      <div class="row mx-auto">
+        <div class="row">
+          <form action="">
+            <label for="title">Titre:</label>
+            <input type="text" id="title"><br />
+            <label for="accro">Phrase D'accroche:</label>
+            <input type="text" id="accro"><br />
+            <label for="summary">Description:</label>
+            <input type="text" id="summary"><br />
+            <input type="button" value="Send" onclick="addCard()"><br />
+          </form>
+        </div>
 
+        <div class="row mx-5 card" id="viewCard">
+    
+        </div>
+      </div>
+    </div>
 
-  <h1 id="dtitle"></h1>
-  <p id="daccro"></p>
-  <p id="dsumm"></p>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
