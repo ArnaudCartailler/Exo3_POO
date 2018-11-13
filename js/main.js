@@ -1,3 +1,9 @@
+/**
+ * 
+ * @param {string} title 
+ * @param {string} accro 
+ * @param {string} summary 
+ */
 function Cards(title, accro, summary) {
     this.title = title;
     this.accro = accro;
@@ -12,6 +18,7 @@ function addCard() {
     document.getElementById('title').value = "";
     document.getElementById('accro').value = "";
     document.getElementById('summary').value = "";
+
 
     let htmlManager = {
         parentElement: document.getElementById('viewCard'),
@@ -38,6 +45,10 @@ function addCard() {
                 childElement.appendChild(descriptionElement);
             }
         },
+        /**
+         * 
+         * @param {array} array 
+         */
         displayCard: function (array) {
             let that = this;
             array.forEach(function (card) {
